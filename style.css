@@ -1,0 +1,261 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(#75c2f5, #4baef1, #0495f6, #7cbdf2);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container Styles */
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.header span {
+  font-size: 24px;
+  color: #ecf0f1;
+  font-style: italic;
+}
+
+/* Search Bar Styles */
+.searchbar {
+  position: absolute;
+  
+  top: 10px;
+  left: 10px;
+  display: flex;
+  background-color: #ecf0f1;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-icon img {
+  width: 25px;
+  margin: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#search-icon img:hover {
+  transform: rotate(360deg);
+}
+
+#city {
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+/* Past Weather Button Styles */
+.top-right-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+button {
+  background-color: #0495f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Weather Card Styles */
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  width: 60%; /* Adjusted width */
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-card:hover {
+  transform: scale(1.01);
+}
+
+.weather-card h3, .weather-card p {
+  color: #2c3e50;
+}
+
+/* Weather Icon Animation */
+#weather-info img {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#datee_time p {
+  font-size: 18px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* php */
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #3498db;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.weather-details p {
+  margin: 8px 0;
+  color: #4c4949;
+}
+.weather-details p:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+}
+
+.search-row{
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background-color: #ecf0f1;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  background-color: #3498db;
+}
+
+.search-row input{
+  background-color: #3498db;  
+}
+
+
+.search-row:hover{
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: 2.5s ease-in-out;
+}
+
+.search-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cityname {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-button {
+  border: none;
+  cursor: pointer;
+  background-color: #0495f6;
+}
+
+.search-button img {
+  width: 20px;
+}
+
+#search-icon {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+}
+#past-weather {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#past-weather h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.weather-details h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.weather-details:hover {
+  transform: scale(1.05);
+  background-color: #2980b9; /* Change background color on hover */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.weather-details img {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin-left: 130px; /* Optional: Add some margin for spacing */
+  animation: rotation 10s infinite linear;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

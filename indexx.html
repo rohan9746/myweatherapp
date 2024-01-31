@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="searchbar">
+        <div id="search-icon">
+            <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-1024.png" alt="Search Icon">
+        </div>
+        <input type="text" id="city" placeholder="Search for location..." name="textBox">
+    </div>
+    <div class="header" onclick="window.location.reload();">
+        <p>Your Weather App</p>
+        <span>Weathering With You</span>
+    </div>
+
+
+    <div class="top-right-button">
+        <form action="index.php">
+            <button type="submit">Past weather</button>
+        </form>
+    </div>
+
+
+
+    <div id="datee_time">
+        <p id="date_time"></p>
+    </div>
+
+    <div id="weather-info" class="weather-card">
+        <h3>Weather in Your City</h3>
+    </div>
+
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+<footer>
+    <p>Copy Right © Reserved By : Rohan Sitoula, 2408887</p>
+</footer>
+
+</html>
